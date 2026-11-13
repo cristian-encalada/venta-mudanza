@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moving Out Sale + Apartment Transfer</title>
+<meta name="description" content="Venta por mudanza en Punta Carretas, Montevideo: muebles, electrodomésticos y electrónica, traspaso de monoambiente e internet Antel. Moving out sale: furniture, appliances, apartment and Antel internet transfer.">
+<meta property="og:title" content="Venta por mudanza + traspaso de apartamento / Moving Out Sale">
+<meta property="og:description" content="Muebles, electrodomésticos, monoambiente en Punta Carretas e internet Antel. Furniture, appliances, studio apartment and Antel internet transfer.">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/placeholder.svg">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-top">
+      <h1 id="title"></h1>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+    </div>
+    <p id="intro" class="intro"></p>
+    <p id="location" class="location"></p>
+  </div>
+</header>
+
+<main>
+  <div class="filters" id="filters" role="group"></div>
+  <section aria-labelledby="h-items">
+    <h2 id="h-items"></h2>
+    <div class="grid" id="grid-items"></div>
+  </section>
+  <section aria-labelledby="h-services">
+    <h2 id="h-services"></h2>
+    <div class="grid" id="grid-services"></div>
+  </section>
+  <p id="empty" class="empty" hidden></p>
+</main>
+
+<footer>
+  <p id="updated"></p>
+  <p id="pickup"></p>
+</footer>
+
+<a id="fab" class="fab" target="_blank" rel="noopener"></a>
+
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true">
+  <button type="button" class="lb-close" id="lb-close">&times;</button>
+  <button type="button" class="lb-nav lb-prev" id="lb-prev">&#8249;</button>
+  <img id="lb-img" alt="">
+  <button type="button" class="lb-nav lb-next" id="lb-next">&#8250;</button>
+</div>
+
+<script src="data.js?v=3"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>
