@@ -12,7 +12,7 @@
       wa: "Message on WhatsApp", askAnyway: "Ask anyway",
       month: "month", perMonth: "/ month",
       updated: "Last updated: ", pickup: "Pickup: details to be confirmed by message.",
-      fab: "WhatsApp", noResults: "Nothing available right now.", details: "Product reference",
+      fab: "WhatsApp", noResults: "Nothing available right now.", details: "Product reference", map: "See on Google Maps",
       prev: "Previous photo", next: "Next photo", goTo: "Go to photo ", close: "Close", photo: "Photo ", lang: "Language",
       msgItem: function (t, p) { return "Hi! I'm interested in: " + t + " (" + p + "). Is it still available?"; },
       msgGeneral: "Hi! I saw your moving out sale and I have a question."
@@ -27,7 +27,7 @@
       wa: "Escribir por WhatsApp", askAnyway: "Consultar igual",
       month: "mes", perMonth: "/ mes",
       updated: "Última actualización: ", pickup: "Retiro: detalles a coordinar por mensaje.",
-      fab: "WhatsApp", noResults: "No hay nada disponible por ahora.", details: "Referencia del producto",
+      fab: "WhatsApp", noResults: "No hay nada disponible por ahora.", details: "Referencia del producto", map: "Ver en Google Maps",
       prev: "Foto anterior", next: "Foto siguiente", goTo: "Ir a la foto ", close: "Cerrar", photo: "Foto ", lang: "Idioma",
       msgItem: function (t, p) { return "¡Hola! Me interesa: " + t + " (" + p + "). ¿Sigue disponible?"; },
       msgGeneral: "¡Hola! Vi tu venta por mudanza y tengo una consulta."
@@ -92,14 +92,22 @@
       btn = '<a class="wa-btn" target="_blank" rel="noopener" href="' +
             esc(waUrl(s.msgItem(title, plainPrice(l, s)))) + '">' + esc(label) + "</a>";
     }
-    return '<article class="card is-' + esc(st) + '" data-status="' + esc(st) + '">' +
+    var chips = (l.chips || []).map(function (c) { return '<li>' + esc(c[lang]) + "</li>"; }).join("");
+    var secs = (l.sections || []).map(function (sec) {
+      return '<section class="facts facts-' + esc(sec.icon || "") + '"><h4>' + esc(sec.title[lang]) + "</h4><ul>" +
+        sec.items.map(function (it) { return "<li>" + esc(it[lang]) + "</li>"; }).join("") + "</ul></section>";
+    }).join("");
+    return '<article class="card is-' + esc(st) + (l.wide ? " wide" : "") + '" data-status="' + esc(st) + '">' +
       carouselHtml(l, s) +
       '<div class="card-body"><span class="badge ' + esc(st) + '">' + esc(s[st]) + "</span>" +
       "<h3>" + esc(title) + "</h3>" +
       '<div class="price">$ ' + fmtNumber(l.price) + " " + esc(CONFIG.currency) +
       (l.priceSuffix ? ' <small>' + esc(s.perMonth) + "</small>" : "") + "</div>" +
       (l.extra ? '<p class="extra">' + esc(l.extra[lang]) + "</p>" : "") +
-      '<p class="desc">' + esc(l.desc[lang]) + "</p>" +
+      (l.total ? '<p class="total">' + esc(l.total[lang]) + "</p>" : "") +
+      (chips ? '<ul class="chips">' + chips + "</ul>" : "") +
+      (l.desc && l.desc[lang] ? '<p class="desc">' + esc(l.desc[lang]) + "</p>" : "") + secs +
+      (l.mapLink ? '<a class="ref-link" href="' + esc(l.mapLink) + '" target="_blank" rel="noopener">' + esc(s.map) + " &#8599;</a>" : "") +
       (l.link ? '<a class="ref-link" href="' + esc(l.link) + '" target="_blank" rel="noopener">' + esc(s.details + " (" + storeName(l.link) + ")") + " &#8599;</a>" : "") + btn + "</div></article>";
   }
 

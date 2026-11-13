@@ -89,7 +89,7 @@ const LISTINGS = [
     desc: { en: "Square folding table, iron frame and wood-look MDF top. 60 × 60 cm, 70 cm high, 4 kg. Folds flat, good for 2 people or small spaces.",
             es: "Mesa plegable cuadrada, estructura de hierro y tapa de MDF símil madera. 60 × 60 cm, 70 cm de alto, 4 kg. Se pliega, ideal para 2 personas o espacios chicos." },
     link: "https://www.mercadolibre.com.uy/mesa-plegable-cuadrada-de-hierro-y-madera/p/MLU27622273",
-    images: ["images/real-table-1.jpg", "images/real-table-2.jpg", "images/ml-table-1.jpg", "images/ml-table-2.jpg", "images/ml-table-3.jpg"]
+    images: ["images/real-table-1.jpg", "images/real-table-2.jpg", "images/ml-table-1.jpg", "images/ml-table-3.jpg"]
   },
   {
     id: "airfryer", section: "items", status: "available", price: 1000,
@@ -100,18 +100,37 @@ const LISTINGS = [
     images: ["images/real-airfryer-1.jpg", "images/real-airfryer-2.jpg", "images/real-airfryer-3.jpg", "images/ml-airfryer-1.jpg", "images/ml-airfryer-2.jpg", "images/ml-airfryer-3.jpg"]
   },
   {
+    id: "apartment", section: "services", status: "available", price: 17400, priceSuffix: "month",
+    wide: true,
+    extra: { en: "+ approx. 4.000 UYU common expenses (gastos comunes)", es: "+ aprox. 4.000 UYU de gastos comunes" },
+    total: { en: "≈ 21.400 UYU / month in total", es: "≈ 21.400 UYU / mes en total" },
+    title: { en: "Studio apartment transfer, Punta Carretas", es: "Traspaso de monoambiente en Punta Carretas" },
+    chips: [
+      { en: "Unfurnished", es: "Sin amueblar" },
+      { en: "Studio (monoambiente)", es: "Monoambiente" },
+      { en: "Available from Dec 1", es: "Disponible desde el 1/12" }
+    ],
+    sections: [
+      { title: { en: "Location", es: "Ubicación" }, icon: "pin", items: [
+        { en: "José Ellauri 724, Trading Park building, 6th floor", es: "José Ellauri 724, edificio Trading Park, piso 6" },
+        { en: "1 block from Parque Villa Biarritz", es: "A 1 cuadra del Parque Villa Biarritz" },
+        { en: "Close to supermarkets, public transport and services", es: "Cerca de supermercados, transporte y servicios" }
+      ] },
+      { title: { en: "Requirements", es: "Requisitos" }, icon: "check", items: [
+        { en: "1 month commission to the real estate agency (inmobiliaria)", es: "1 mes de comisión a la inmobiliaria" },
+        { en: "Rent guarantee: Porto, Sura, Mapfre, etc.", es: "Garantía de alquiler: Porto, Sura, Mapfre, etc." }
+      ] }
+    ],
+    desc: { en: "", es: "" },
+    mapLink: "https://www.google.com/maps/search/?api=1&query=Jos%C3%A9+Ellauri+724,+Montevideo,+Uruguay",
+    images: ["images/real-apartment-1.jpg", "images/real-apartment-2.jpg", "images/real-apartment-3.jpg"]
+  },
+  {
     id: "internet", section: "services", status: "available", price: 1700, priceSuffix: "month",
     title: { en: "Antel internet transfer", es: "Traspaso de internet Antel" },
     desc: { en: "Transfer of an Antel internet connection, unlimited.",
             es: "Traspaso de conexión de internet Antel, ilimitada." },
     images: ["images/real-internet-1.jpg"]
-  },
-  {
-    id: "apartment", section: "services", status: "available", price: 17400, priceSuffix: "month",
-    extra: { en: "+ approx. 4000 UYU common expenses (gastos comunes)", es: "+ aprox. 4000 UYU de gastos comunes" },
-    title: { en: "Apartment transfer: unfurnished studio, Punta Carretas", es: "Traspaso de apartamento: monoambiente sin amueblar, Punta Carretas" },
-    desc: { en: "Unfurnished studio apartment (monoambiente) in Punta Carretas, on Av. José Ellauri, 1 block from Parque Villa Biarritz. Great location: close to supermarkets, public transport and services. Available from December 1st.\nRequirements: 1 month commission to the real estate agency (inmobiliaria) and a rent guarantee (Porto, Sura, Mapfre, etc.).",
-            es: "Monoambiente sin amueblar en Punta Carretas, sobre Av. José Ellauri, a 1 cuadra del Parque Villa Biarritz. Excelente ubicación: cerca de supermercados, transporte y servicios. Disponible desde el 1 de diciembre.\nRequisitos: 1 mes de comisión a la inmobiliaria y garantía de alquiler (Porto, Sura, Mapfre, etc.)." },
-    images: ["images/real-apartment-1.jpg", "images/real-apartment-2.jpg", "images/real-apartment-3.jpg"]
   }
+
 ];
