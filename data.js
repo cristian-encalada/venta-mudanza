@@ -28,7 +28,7 @@ const LISTINGS = [
     images: ["images/real-tv-1.jpg", "images/real-tv-2.jpg", "images/real-tv-3.jpg", "images/real-tv-4.jpg", "images/real-tv-5.jpg", "images/tv-1.jpg"]
   },
   {
-    id: "monitor", section: "items", status: "available", price: 5000,
+    id: "monitor", section: "items", status: "sold", price: 5000,
     title: { en: "Monitor Philips 27\" curved", es: "Monitor Philips 27\" curvo" },
     desc: { en: "Philips 271E1SCA 27\" curved monitor (1500R), Full HD 1920×1080, VA panel, 75 Hz, 4 ms, AMD FreeSync. 3000:1 contrast, 100% sRGB. HDMI + VGA, audio in and headphone out. 220 V.",
             es: "Monitor curvo Philips 271E1SCA de 27\" (1500R), Full HD 1920×1080, panel VA, 75 Hz, 4 ms, AMD FreeSync. Contraste 3000:1, 100% sRGB. HDMI + VGA, entrada de audio y salida de auriculares. 220 V." },
@@ -76,7 +76,7 @@ const LISTINGS = [
     images: ["images/real-chair-1.jpg", "images/ml-chair-1.jpg", "images/ml-chair-2.jpg", "images/ml-chair-3.jpg", "images/ml-chair-4.jpg", "images/ml-chair-5.jpg"]
   },
   {
-    id: "desk", section: "items", status: "available", price: 750,
+    id: "desk", section: "items", status: "booked", price: 750,
     title: { en: "Desk with trestles", es: "Escritorio con caballetes" },
     desc: { en: "Desk with a light wood-look top on black trestles with built-in shelves. 136 × 45 cm, 74 cm high. 2.4 cm thick top, holds a laptop and a printer at the same time. MDP, easy to take apart for moving.",
             es: "Escritorio con tapa símil madera clara y caballetes negros con estantes integrados. 136 × 45 cm, 74 cm de alto. Tapa de 2,4 cm de espesor, soporta notebook e impresora a la vez. MDP, fácil de desarmar para trasladar." },
@@ -92,7 +92,7 @@ const LISTINGS = [
     images: ["images/real-table-1.jpg", "images/real-table-2.jpg", "images/ml-table-1.jpg", "images/ml-table-3.jpg"]
   },
   {
-    id: "airfryer", section: "items", status: "available", price: 1000,
+    id: "airfryer", section: "items", status: "booked", price: 1000,
     title: { en: "Air fryer Nappo 5.7 L", es: "Freidora sin aceite Nappo 5,7 L" },
     desc: { en: "Nappo NEF-129 digital touch air fryer, black, 5.7 L basket with viewing window. 1500 W, adjustable 80–200 °C, non-stick.",
             es: "Freidora sin aceite Nappo NEF-129, digital táctil, negra, canasto de 5,7 L con visor. 1500 W, temperatura regulable 80–200 °C, antiadherente." },
