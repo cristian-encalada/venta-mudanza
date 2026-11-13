@@ -37,7 +37,19 @@
   var PLACEHOLDER = "images/placeholder.svg";
   var lang = "en";
   var availableOnly = false;
-  try { var saved = localStorage.getItem("lang"); if (saved === "en" || saved === "es") lang = saved; } catch (e) {}
+  // 1) a language the visitor picked with the EN/ES switch, 2) the browser's preferred languages, 3) English
+  function browserLang() {
+    var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var code = String(list[i]).toLowerCase().slice(0, 2);
+      if (code === "es" || code === "en") return code;
+    }
+    return null;
+  }
+  var saved = null;
+  try { saved = localStorage.getItem("lang"); } catch (e) {}
+  if (saved === "en" || saved === "es") lang = saved;
+  else lang = browserLang() || "en";
 
   var $ = function (id) { return document.getElementById(id); };
   function esc(s) {
