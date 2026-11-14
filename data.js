@@ -16,11 +16,11 @@
  *
  * Update CONFIG.lastUpdated (YYYY-MM-DD) whenever you change something.
  */
-const CONFIG = { whatsapp: "59894345476", currency: "UYU", lastUpdated: "2026-11-13" };
+const CONFIG = { whatsapp: "59894345476", currency: "UYU", lastUpdated: "2026-11-14" };
 
 const LISTINGS = [
   {
-    id: "tv", section: "items", status: "available", price: 6000,
+    id: "tv", section: "items", status: "available", price: 4500,
     title: { en: "Smart TV Hometech 43\"", es: "Smart TV Hometech 43\"" },
     desc: { en: "Hometech 43\" Full HD (1920×1080) smart TV, frameless. Android 12 with YouTube and Netflix, Wi-Fi, 3 HDMI, 2 USB, Ethernet. 60 Hz, 178° viewing angle.",
             es: "Smart TV Hometech 43\" Full HD (1920×1080), sin marco. Android 12 con YouTube y Netflix, Wi-Fi, 3 HDMI, 2 USB, Ethernet. 60 Hz, ángulo de visión 178°." },
@@ -68,7 +68,7 @@ const LISTINGS = [
     images: ["images/ml-boxbed-1.jpg", "images/ml-boxbed-2.jpg", "images/ml-boxbed-3.jpg", "images/ml-boxbed-4.jpg"]
   },
   {
-    id: "chair", section: "items", status: "available", price: 1000,
+    id: "chair", section: "items", status: "booked", price: 1000,
     title: { en: "Office chair Doona X5", es: "Silla de oficina Doona X5" },
     desc: { en: "Doona X5 ergonomic office chair, black mesh back, chrome base with wheels. Swivel, height-adjustable seat (46–56 cm), tilting backrest, armrests. Up to 90 kg.",
             es: "Silla de oficina ergonómica Doona X5, respaldo de malla negro, base cromada con ruedas. Giratoria, asiento regulable en altura (46–56 cm), respaldo basculante, apoyabrazos. Soporta hasta 90 kg." },
@@ -92,7 +92,7 @@ const LISTINGS = [
     images: ["images/real-table-1.jpg", "images/real-table-2.jpg", "images/ml-table-1.jpg", "images/ml-table-3.jpg"]
   },
   {
-    id: "airfryer", section: "items", status: "booked", price: 1000,
+    id: "airfryer", section: "items", status: "sold", price: 1000,
     title: { en: "Air fryer Nappo 5.7 L", es: "Freidora sin aceite Nappo 5,7 L" },
     desc: { en: "Nappo NEF-129 digital touch air fryer, black, 5.7 L basket with viewing window. 1500 W, adjustable 80–200 °C, non-stick.",
             es: "Freidora sin aceite Nappo NEF-129, digital táctil, negra, canasto de 5,7 L con visor. 1500 W, temperatura regulable 80–200 °C, antiadherente." },
