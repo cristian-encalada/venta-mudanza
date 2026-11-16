@@ -16,7 +16,7 @@
  *
  * Update CONFIG.lastUpdated (YYYY-MM-DD) whenever you change something.
  */
-const CONFIG = { whatsapp: "59894345476", currency: "UYU", lastUpdated: "2026-11-14" };
+const CONFIG = { whatsapp: "59894345476", currency: "UYU", lastUpdated: "2026-11-16" };
 
 const LISTINGS = [
   {
@@ -68,7 +68,7 @@ const LISTINGS = [
     images: ["images/ml-boxbed-1.jpg", "images/ml-boxbed-2.jpg", "images/ml-boxbed-3.jpg", "images/ml-boxbed-4.jpg"]
   },
   {
-    id: "chair", section: "items", status: "booked", price: 1000,
+    id: "chair", section: "items", status: "sold", price: 1000,
     title: { en: "Office chair Doona X5", es: "Silla de oficina Doona X5" },
     desc: { en: "Doona X5 ergonomic office chair, black mesh back, chrome base with wheels. Swivel, height-adjustable seat (46–56 cm), tilting backrest, armrests. Up to 90 kg.",
             es: "Silla de oficina ergonómica Doona X5, respaldo de malla negro, base cromada con ruedas. Giratoria, asiento regulable en altura (46–56 cm), respaldo basculante, apoyabrazos. Soporta hasta 90 kg." },
@@ -76,7 +76,7 @@ const LISTINGS = [
     images: ["images/real-chair-1.jpg", "images/ml-chair-1.jpg", "images/ml-chair-2.jpg", "images/ml-chair-3.jpg", "images/ml-chair-4.jpg", "images/ml-chair-5.jpg"]
   },
   {
-    id: "desk", section: "items", status: "booked", price: 750,
+    id: "desk", section: "items", status: "sold", price: 750,
     title: { en: "Desk with trestles", es: "Escritorio con caballetes" },
     desc: { en: "Desk with a light wood-look top on black trestles with built-in shelves. 136 × 45 cm, 74 cm high. 2.4 cm thick top, holds a laptop and a printer at the same time. MDP, easy to take apart for moving.",
             es: "Escritorio con tapa símil madera clara y caballetes negros con estantes integrados. 136 × 45 cm, 74 cm de alto. Tapa de 2,4 cm de espesor, soporta notebook e impresora a la vez. MDP, fácil de desarmar para trasladar." },
@@ -84,7 +84,7 @@ const LISTINGS = [
     images: ["images/real-desk-1.jpg", "images/real-desk-2.jpg"]
   },
   {
-    id: "table", section: "items", status: "available", price: 750,
+    id: "table", section: "items", status: "available", price: 500,
     title: { en: "Folding square table", es: "Mesa plegable cuadrada" },
     desc: { en: "Square folding table, iron frame and wood-look MDF top. 60 × 60 cm, 70 cm high, 4 kg. Folds flat, good for 2 people or small spaces.",
             es: "Mesa plegable cuadrada, estructura de hierro y tapa de MDF símil madera. 60 × 60 cm, 70 cm de alto, 4 kg. Se pliega, ideal para 2 personas o espacios chicos." },
