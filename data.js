@@ -16,11 +16,11 @@
  *
  * Update CONFIG.lastUpdated (YYYY-MM-DD) whenever you change something.
  */
-const CONFIG = { whatsapp: "59894345476", currency: "UYU", lastUpdated: "2026-11-16" };
+const CONFIG = { whatsapp: "59894345476", currency: "UYU", lastUpdated: "2026-11-23" };
 
 const LISTINGS = [
   {
-    id: "tv", section: "items", status: "available", price: 4500,
+    id: "tv", section: "items", status: "booked", price: 4500,
     title: { en: "Smart TV Hometech 43\"", es: "Smart TV Hometech 43\"" },
     desc: { en: "Hometech 43\" Full HD (1920×1080) smart TV, frameless. Android 12 with YouTube and Netflix, Wi-Fi, 3 HDMI, 2 USB, Ethernet. 60 Hz, 178° viewing angle.",
             es: "Smart TV Hometech 43\" Full HD (1920×1080), sin marco. Android 12 con YouTube y Netflix, Wi-Fi, 3 HDMI, 2 USB, Ethernet. 60 Hz, ángulo de visión 178°." },
@@ -36,7 +36,7 @@ const LISTINGS = [
     images: ["images/real-monitor-1.jpg", "images/real-monitor-2.jpg", "images/ml-monitor-1.jpg", "images/ml-monitor-2.jpg", "images/ml-monitor-3.jpg", "images/ml-monitor-4.jpg", "images/ml-monitor-5.jpg"]
   },
   {
-    id: "printer", section: "items", status: "available", price: 4000,
+    id: "printer", section: "items", status: "sold", price: 4000,
     title: { en: "Printer Canon Pixma G2110", es: "Impresora Canon Pixma G2110" },
     desc: { en: "Canon Pixma G2110 colour multifunction: print, scan, copy. Refillable 4-tank ink system, up to 4800×1200 dpi colour. USB (no Wi-Fi), 100-sheet tray, A4/Letter/envelopes. 220 V.",
             es: "Impresora multifunción a color Canon Pixma G2110: imprime, escanea, copia. Sistema de 4 tanques de tinta recargables, hasta 4800×1200 dpi a color. USB (sin Wi-Fi), bandeja de 100 hojas, A4/Carta/sobres. 220 V." },
@@ -44,7 +44,7 @@ const LISTINGS = [
     images: ["images/real-printer-1.jpg", "images/ml-printer-1.jpg", "images/ml-printer-2.jpg", "images/ml-printer-3.jpg", "images/ml-printer-4.jpg", "images/ml-printer-5.jpg", "images/ml-printer-6.jpg"]
   },
   {
-    id: "minibar", section: "items", status: "available", price: 4500,
+    id: "minibar", section: "items", status: "sold", price: 4500,
     title: { en: "Minibar Enxuta 85 L", es: "Heladera minibar Enxuta 85 L" },
     desc: { en: "Enxuta RENX110FH-A minibar fridge, white, 85 L. Small freezer compartment, vegetable drawer, 2 glass shelves, interior light, 6 temperature levels. Energy class A, 220 V. 45 × 46 cm, 85 cm high.",
             es: "Heladera minibar Enxuta RENX110FH-A, blanca, 85 L. Compartimiento congelador, cajón de verduras, 2 estantes de vidrio, luz interior, 6 niveles de temperatura. Eficiencia energética A, 220 V. 45 × 46 cm, 85 cm de alto." },
@@ -52,7 +52,7 @@ const LISTINGS = [
     images: ["images/real-minibar-1.jpg", "images/real-minibar-2.jpg", "images/real-minibar-3.jpg", "images/ml-minibar-1.jpg", "images/ml-minibar-2.jpg", "images/ml-minibar-3.jpg"]
   },
   {
-    id: "sofabed", section: "items", status: "available", price: 4000,
+    id: "sofabed", section: "items", status: "available", price: 2000,
     title: { en: "Sofa bed Foldie (2-seater)", es: "Sillón cama Foldie (2 cuerpos)" },
     desc: { en: "Foldie 2-seater foam sofa bed (La Cueva Muebles), dark grey plain fabric, with cushions. Sofa: 135 × 78 cm, 64 cm high. Opens into a 135 × 190 cm bed. Supports up to 200 kg.",
             es: "Sillón cama Foldie de 2 cuerpos (La Cueva Muebles), espuma de alta densidad, tela lisa gris oscuro, con almohadones. Sillón: 135 × 78 cm, 64 cm de alto. Se abre en cama de 135 × 190 cm. Soporta hasta 200 kg." },
@@ -100,7 +100,7 @@ const LISTINGS = [
     images: ["images/real-airfryer-1.jpg", "images/real-airfryer-2.jpg", "images/real-airfryer-3.jpg", "images/ml-airfryer-1.jpg", "images/ml-airfryer-2.jpg", "images/ml-airfryer-3.jpg"]
   },
   {
-    id: "apartment", section: "services", status: "available", price: 17400, priceSuffix: "month",
+    id: "apartment", section: "services", status: "booked", price: 17400, priceSuffix: "month",
     wide: true,
     extra: { en: "+ approx. 4.000 UYU common expenses (gastos comunes)", es: "+ aprox. 4.000 UYU de gastos comunes" },
     total: { en: "≈ 21.400 UYU / month in total", es: "≈ 21.400 UYU / mes en total" },
@@ -126,7 +126,7 @@ const LISTINGS = [
     images: ["images/real-apartment-1.jpg", "images/real-apartment-2.jpg", "images/real-apartment-3.jpg"]
   },
   {
-    id: "internet", section: "services", status: "available", price: 1700, priceSuffix: "month",
+    id: "internet", section: "services", status: "sold", price: 1700, priceSuffix: "month",
     title: { en: "Antel internet transfer", es: "Traspaso de internet Antel" },
     desc: { en: "Transfer of an Antel internet connection, unlimited.",
             es: "Traspaso de conexión de internet Antel, ilimitada." },
